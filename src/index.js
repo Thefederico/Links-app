@@ -30,7 +30,7 @@ app.use(
   session({
     secret: "app-links",
     resave: false,
-    saveUnitialized: false,
+    saveUninitialized: false,
     store: new mysqlStore(database),
   })
 );
